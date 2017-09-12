@@ -27,6 +27,4 @@ class DownloadAllShopsInteractorFakeImpl: DownloadAllShopsInteractor {
             onSuccess(shops)
         }
     }
-    
-    
 }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ySP-YM-oni">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,14 +16,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="foW-hI-By6">
-                                <rect key="frame" x="16" y="64" width="736" height="480"/>
+                                <rect key="frame" x="16" y="64" width="343" height="301.5"/>
                             </mapView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aMb-jf-V9w">
-                                <rect key="frame" x="16" y="544" width="736" height="480"/>
+                                <rect key="frame" x="16" y="365.5" width="343" height="301.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AqD-lD-o5l">
                                     <size key="itemSize" width="305" height="50"/>
@@ -32,50 +33,41 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShopCell" id="BVN-Jf-act" customClass="ShopCollectionViewCell" customModule="MadridShops" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
+                                        <rect key="frame" x="19" y="0.0" width="305" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJJ-Ck-UY5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="346" height="90"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c7W-Lo-jwg">
-                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                            <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="c7W-Lo-jwg" secondAttribute="height" multiplier="1:1" id="nvA-ma-doE"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8M-O6-EDd" userLabel="NombreLabel">
-                                                            <rect key="frame" x="90" y="0.0" width="256" height="90"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c7W-Lo-jwg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="h8M-O6-EDd" secondAttribute="bottom" id="0Mk-sx-qgg"/>
-                                                        <constraint firstItem="c7W-Lo-jwg" firstAttribute="leading" secondItem="lJJ-Ck-UY5" secondAttribute="leading" id="67i-PS-OlB"/>
-                                                        <constraint firstItem="h8M-O6-EDd" firstAttribute="leading" secondItem="c7W-Lo-jwg" secondAttribute="trailing" id="I3p-yk-1JE"/>
-                                                        <constraint firstItem="h8M-O6-EDd" firstAttribute="top" secondItem="lJJ-Ck-UY5" secondAttribute="top" id="Jwo-q3-4sa"/>
-                                                        <constraint firstItem="c7W-Lo-jwg" firstAttribute="top" secondItem="lJJ-Ck-UY5" secondAttribute="top" id="KQ6-EC-lFg"/>
-                                                        <constraint firstAttribute="trailing" secondItem="h8M-O6-EDd" secondAttribute="trailing" id="peB-ML-voj"/>
-                                                        <constraint firstAttribute="bottom" secondItem="c7W-Lo-jwg" secondAttribute="bottom" id="qbk-6L-Gvv"/>
+                                                        <constraint firstAttribute="width" constant="50" id="nkc-KN-S55"/>
+                                                        <constraint firstAttribute="width" secondItem="c7W-Lo-jwg" secondAttribute="height" multiplier="1:1" id="nvA-ma-doE"/>
                                                     </constraints>
-                                                </stackView>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8M-O6-EDd" userLabel="NombreLabel">
+                                                    <rect key="frame" x="50" y="0.0" width="255" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="lJJ-Ck-UY5" firstAttribute="leading" secondItem="BVN-Jf-act" secondAttribute="leading" id="0E6-D1-5NB"/>
-                                            <constraint firstAttribute="bottom" secondItem="lJJ-Ck-UY5" secondAttribute="bottom" constant="-40" id="Eg8-CV-URe"/>
-                                            <constraint firstAttribute="trailing" secondItem="lJJ-Ck-UY5" secondAttribute="trailing" constant="-41" id="G2O-2r-ve6"/>
-                                            <constraint firstItem="lJJ-Ck-UY5" firstAttribute="top" secondItem="BVN-Jf-act" secondAttribute="top" id="cv8-WG-2G0"/>
+                                            <constraint firstAttribute="trailing" secondItem="h8M-O6-EDd" secondAttribute="trailing" id="Er1-gr-dnx"/>
+                                            <constraint firstItem="c7W-Lo-jwg" firstAttribute="top" secondItem="BVN-Jf-act" secondAttribute="top" id="T0b-Qa-gBV"/>
+                                            <constraint firstAttribute="bottom" secondItem="h8M-O6-EDd" secondAttribute="bottom" id="WhG-IY-TBO"/>
+                                            <constraint firstItem="h8M-O6-EDd" firstAttribute="top" secondItem="BVN-Jf-act" secondAttribute="top" id="gLk-KY-ToH"/>
+                                            <constraint firstAttribute="bottom" secondItem="c7W-Lo-jwg" secondAttribute="bottom" id="hy0-td-X5C"/>
+                                            <constraint firstItem="h8M-O6-EDd" firstAttribute="leading" secondItem="c7W-Lo-jwg" secondAttribute="trailing" id="obN-Js-j3R"/>
+                                            <constraint firstItem="c7W-Lo-jwg" firstAttribute="leading" secondItem="BVN-Jf-act" secondAttribute="leading" id="u4M-C6-ESf"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="c7W-Lo-jwg" id="TxK-9k-jTJ"/>
                                             <outlet property="nombreLabel" destination="h8M-O6-EDd" id="XTx-GB-1S3"/>
+                                            <segue destination="9oT-qQ-02r" kind="show" identifier="ShowShopDetailSegway" id="TKb-Cf-UJh"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -101,23 +93,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086.71875" y="105.46875"/>
+            <point key="canvasLocation" x="1512.5" y="72.0703125"/>
+        </scene>
+        <!--Shop Detail View Controller-->
+        <scene sceneID="KtH-mD-reE">
+            <objects>
+                <viewController id="9oT-qQ-02r" customClass="ShopDetailViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="25e-Kf-VO8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PzI-9y-1pa">
+                                <rect key="frame" x="16" y="82" width="343" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lia-Fh-Sem">
+                                <rect key="frame" x="16" y="374" width="343" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JM2-qo-C2z"/>
+                    </view>
+                    <connections>
+                        <outlet property="shopDetailDescription" destination="PzI-9y-1pa" id="U78-e6-0RI"/>
+                        <outlet property="shopImageView" destination="lia-Fh-Sem" id="nsj-PQ-tQT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0M-Uh-D3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336.8000000000002" y="85.907046476761622"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YUB-4l-cg2">
             <objects>
                 <navigationController id="ySP-YM-oni" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ymr-Oc-0Ot">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="o27-t0-KRu"/>
+                        <segue destination="mo6-3c-egI" kind="relationship" relationship="rootViewController" id="wDy-0i-Ffl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7g-MN-hYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="115"/>
+            <point key="canvasLocation" x="-140" y="73"/>
+        </scene>
+        <!--!MAD!-->
+        <scene sceneID="wG3-w3-AyI">
+            <objects>
+                <viewController id="mo6-3c-egI" customClass="MainViewController" customModule="MadridShops" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RfC-Qx-7O0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="RqH-Xe-lEw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="!MAD!" id="mTu-cL-r5k">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="mBI-v9-1hE">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="GFe-CX-Cc7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pkC-oy-uux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="73"/>
         </scene>
     </scenes>
 </document>

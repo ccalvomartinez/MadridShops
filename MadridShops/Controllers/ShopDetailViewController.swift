@@ -10,9 +10,14 @@ import UIKit
 
 class ShopDetailViewController: UIViewController {
 
+    var shop: Shop?
+    @IBOutlet weak var shopDetailDescription: UITextView!
+    @IBOutlet weak var shopImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = self.shop?.name
         // Do any additional setup after loading the view.
     }
 

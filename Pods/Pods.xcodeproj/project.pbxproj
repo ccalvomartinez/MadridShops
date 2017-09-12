@@ -7,73 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B0276C83DDA8D2507963E5E0250E20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		08B8D66B6E9A31768BE5195279CB1AC1 /* Pods-MadridShops-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4226F7A2AF0F1D93F6178391160659D9 /* Pods-MadridShops-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E0EBE0A7BBE5B20A9666A1ACC49AFE8 /* Pods-MadridShops-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6586002E0E07770AEE9BEBA00EDA5485 /* Pods-MadridShops-dummy.m */; };
-		1D79AA1E0036663EC2ABBF342095244C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		36A59EA6AFB21FF09ADA9C2F60C8C37C /* DotsLoading-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED0582124184927CABC86DFF402025C1 /* DotsLoading-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		469CB7C00D83F982FF86E27424A6395B /* DotsLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221ACE8674112CCC46396A5E60F1FB0 /* DotsLoadingView.swift */; };
-		72B1583E95126A83EBC9B9B161E1D63D /* DotsLoading-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85964B2CEB202EA9B6DB319206A358B3 /* DotsLoading-dummy.m */; };
-		B5EA1220453957FCA599A25FE2CCF45B /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350407367538AD824FC1EAB467E99FD /* UIColor+hex.swift */; };
-		F58FA77F55F235188E71FDADE09F9DEA /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D7BD04A981FF5D351B1FED7AAC4CFB /* DotView.swift */; };
+		016B8C54F9F69D9336A04A7C9550EF61 /* Pods-MadridShops-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6586002E0E07770AEE9BEBA00EDA5485 /* Pods-MadridShops-dummy.m */; };
+		16AE630478EE5DABCAC9589F5329E5B8 /* PlainLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D4D85E719E2D2F52C59853F48FF2FD /* PlainLoader.swift */; };
+		4D7E6BB1E63461E678DB989D929A6753 /* SpikeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE1300DA808156B7ECCB2A632F931DE /* SpikeLoader.swift */; };
+		575EF7F85743F43E6A7C0E9EB96B9551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		771750728F40E7720F29F2ED68B6FDF0 /* FillableLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F78BF409627161B19F01D713B9FD3 /* FillableLoader.swift */; };
+		8DE0A11CDA8AEF7B9971333CEE1F72DE /* FillableLoaders-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2C431A20F4CC5B2DD5D953AEEF2F5F /* FillableLoaders-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B426E801A8012813D29F3586009E625 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A36E9D8533FD1C91437EDA2F3BEE9748 /* RoundedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78128E3AA8237365577E633808C2C656 /* RoundedLoader.swift */; };
+		A9A569FF0728D434D685EA759ABAD405 /* FillableLoaders-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 263456D8F755D5E6EE2DA14ED4CF256E /* FillableLoaders-dummy.m */; };
+		B6259A04A5795F5320B388AE6176AB7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		DBB819650172BA060C06BBA8AFD3C0C7 /* WavesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D16162D1E651C8C131305A7677E50D /* WavesLoader.swift */; };
+		EC0C8368969C78C289C0AF4D09850D78 /* Pods-MadridShops-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4226F7A2AF0F1D93F6178391160659D9 /* Pods-MadridShops-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FFCCDF1E642C250A7E98E39A48575EFE /* PBXContainerItemProxy */ = {
+		164F05537DE82F1580D6B8E7C35A5DEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 84E451C15E5AA85C85B5D3C13046B84B;
-			remoteInfo = DotsLoading;
+			remoteGlobalIDString = 425632F84FDE13A29BBE47E186843971;
+			remoteInfo = FillableLoaders;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10D4D85E719E2D2F52C59853F48FF2FD /* PlainLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlainLoader.swift; path = Source/PlainLoader.swift; sourceTree = "<group>"; };
 		124CA82ED263F8E64EAF4F75BE945DEA /* Pods-MadridShops-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MadridShops-acknowledgements.plist"; sourceTree = "<group>"; };
-		1FAB63AD24641130E7BDB8ADA27A7D72 /* DotsLoading.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DotsLoading.modulemap; sourceTree = "<group>"; };
+		1A4A39F7F8A644C6C2F90ACD0CF030CC /* Pods_MadridShops.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MadridShops.framework; path = "Pods-MadridShops.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE1300DA808156B7ECCB2A632F931DE /* SpikeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpikeLoader.swift; path = Source/SpikeLoader.swift; sourceTree = "<group>"; };
+		263456D8F755D5E6EE2DA14ED4CF256E /* FillableLoaders-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FillableLoaders-dummy.m"; sourceTree = "<group>"; };
 		28EBBE6F98AE0CCA2B04D23C3E7C2B5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D708342DEC820806228485C7E580489 /* DotsLoading.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DotsLoading.xcconfig; sourceTree = "<group>"; };
-		37BD1944B6D59FD494C9B2A18D4AFDAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3487C1E1FEED24CA06B8FDA73F3E5BDC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4226F7A2AF0F1D93F6178391160659D9 /* Pods-MadridShops-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MadridShops-umbrella.h"; sourceTree = "<group>"; };
 		4A23218BCD39C138BF5C23FAB2FEB770 /* Pods-MadridShops.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MadridShops.release.xcconfig"; sourceTree = "<group>"; };
-		51542EC2A6573A336A762C60102EC4B3 /* DotsLoading-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DotsLoading-prefix.pch"; sourceTree = "<group>"; };
-		5221ACE8674112CCC46396A5E60F1FB0 /* DotsLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotsLoadingView.swift; path = Dots/Classes/DotsLoadingView.swift; sourceTree = "<group>"; };
-		5A93837346B0D693980C6F40CCB3D51E /* DotsLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DotsLoading.framework; path = DotsLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60E9E50FD0DD02FA7068A192D73E944D /* Pods_MadridShops.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MadridShops.framework; path = "Pods-MadridShops.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		647823CAABE9C3D308B9DFF03CA8444E /* FillableLoaders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FillableLoaders.framework; path = FillableLoaders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6586002E0E07770AEE9BEBA00EDA5485 /* Pods-MadridShops-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MadridShops-dummy.m"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78128E3AA8237365577E633808C2C656 /* RoundedLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundedLoader.swift; path = Source/RoundedLoader.swift; sourceTree = "<group>"; };
 		785630C0C33857ECDD54797971BE2109 /* Pods-MadridShops.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MadridShops.debug.xcconfig"; sourceTree = "<group>"; };
 		78E7130A685D5DEF89005C663257BB39 /* Pods-MadridShops-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MadridShops-frameworks.sh"; sourceTree = "<group>"; };
-		85964B2CEB202EA9B6DB319206A358B3 /* DotsLoading-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DotsLoading-dummy.m"; sourceTree = "<group>"; };
+		7D2C431A20F4CC5B2DD5D953AEEF2F5F /* FillableLoaders-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FillableLoaders-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		989615AC6C4F72E8C124A2018AACE97E /* Pods-MadridShops.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MadridShops.modulemap"; sourceTree = "<group>"; };
 		9FD2391E5EB6924CF1240617837B49D2 /* Pods-MadridShops-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MadridShops-resources.sh"; sourceTree = "<group>"; };
 		A6D8D1E95A5465CED8665BCE01391C96 /* Pods-MadridShops-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MadridShops-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C2D7BD04A981FF5D351B1FED7AAC4CFB /* DotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DotView.swift; path = Dots/Classes/DotView.swift; sourceTree = "<group>"; };
-		ED0582124184927CABC86DFF402025C1 /* DotsLoading-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DotsLoading-umbrella.h"; sourceTree = "<group>"; };
-		F350407367538AD824FC1EAB467E99FD /* UIColor+hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+hex.swift"; path = "Dots/Classes/UIColor+hex.swift"; sourceTree = "<group>"; };
+		A81D16E7A720566829DDC352D46AD30A /* FillableLoaders-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FillableLoaders-prefix.pch"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B70EF1D8A6CBAF1D7E9C6C14A0528D52 /* FillableLoaders.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FillableLoaders.modulemap; sourceTree = "<group>"; };
+		B7D16162D1E651C8C131305A7677E50D /* WavesLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WavesLoader.swift; path = Source/WavesLoader.swift; sourceTree = "<group>"; };
+		D698154FAAF3050601278C5DABFF62AE /* FillableLoaders.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FillableLoaders.xcconfig; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F11F78BF409627161B19F01D713B9FD3 /* FillableLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillableLoader.swift; path = Source/FillableLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		353D1958043B56ABE2536CF83D0491DF /* Frameworks */ = {
+		02734B70EC31C7A6F5AE7A24D0F4B231 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D79AA1E0036663EC2ABBF342095244C /* Foundation.framework in Frameworks */,
+				9B426E801A8012813D29F3586009E625 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40FAA1AF2DF008AB5DE59AF98D6DB902 /* Frameworks */ = {
+		F76DEF36865B34C0AAB2D8A9552A6815 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B0276C83DDA8D2507963E5E0250E20 /* Foundation.framework in Frameworks */,
+				575EF7F85743F43E6A7C0E9EB96B9551 /* Foundation.framework in Frameworks */,
+				B6259A04A5795F5320B388AE6176AB7D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04ECFA1E6929AF9480C283DF8AC2EA71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A615A4B702C743454F9FCF081294587 /* FillableLoaders */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0CBE97D5B850DB23C30116FC849F2245 /* Pods-MadridShops */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,39 +107,35 @@
 			path = "Target Support Files/Pods-MadridShops";
 			sourceTree = "<group>";
 		};
-		3371E1D9728054D7881D4BD1FC9D8D87 /* DotsLoading */ = {
+		2A615A4B702C743454F9FCF081294587 /* FillableLoaders */ = {
 			isa = PBXGroup;
 			children = (
-				5221ACE8674112CCC46396A5E60F1FB0 /* DotsLoadingView.swift */,
-				C2D7BD04A981FF5D351B1FED7AAC4CFB /* DotView.swift */,
-				F350407367538AD824FC1EAB467E99FD /* UIColor+hex.swift */,
-				4623AEA3594D2A1B7F19EE8149F2BB90 /* Support Files */,
+				F11F78BF409627161B19F01D713B9FD3 /* FillableLoader.swift */,
+				10D4D85E719E2D2F52C59853F48FF2FD /* PlainLoader.swift */,
+				78128E3AA8237365577E633808C2C656 /* RoundedLoader.swift */,
+				1AE1300DA808156B7ECCB2A632F931DE /* SpikeLoader.swift */,
+				B7D16162D1E651C8C131305A7677E50D /* WavesLoader.swift */,
+				8F3CF38B2C227DF1761D8841FB2CD0B7 /* Support Files */,
 			);
-			name = DotsLoading;
-			path = DotsLoading;
+			name = FillableLoaders;
+			path = FillableLoaders;
 			sourceTree = "<group>";
 		};
-		353E38EAD80F6BD5CB285DA99A8E7BB3 /* Products */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A93837346B0D693980C6F40CCB3D51E /* DotsLoading.framework */,
-				60E9E50FD0DD02FA7068A192D73E944D /* Pods_MadridShops.framework */,
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4623AEA3594D2A1B7F19EE8149F2BB90 /* Support Files */ = {
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1FAB63AD24641130E7BDB8ADA27A7D72 /* DotsLoading.modulemap */,
-				2D708342DEC820806228485C7E580489 /* DotsLoading.xcconfig */,
-				85964B2CEB202EA9B6DB319206A358B3 /* DotsLoading-dummy.m */,
-				51542EC2A6573A336A762C60102EC4B3 /* DotsLoading-prefix.pch */,
-				ED0582124184927CABC86DFF402025C1 /* DotsLoading-umbrella.h */,
-				37BD1944B6D59FD494C9B2A18D4AFDAF /* Info.plist */,
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/DotsLoading";
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		56D5555FBA86C3C2CC2B616DA24456E1 /* Targets Support Files */ = {
@@ -139,92 +150,91 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9BF3E1C205D5BF31188FAE0A5B1A61A1 /* Pods */,
-				353E38EAD80F6BD5CB285DA99A8E7BB3 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				04ECFA1E6929AF9480C283DF8AC2EA71 /* Pods */,
+				E50991116BAB9D7FA61BC29178CD2B96 /* Products */,
 				56D5555FBA86C3C2CC2B616DA24456E1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9BF3E1C205D5BF31188FAE0A5B1A61A1 /* Pods */ = {
+		8F3CF38B2C227DF1761D8841FB2CD0B7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3371E1D9728054D7881D4BD1FC9D8D87 /* DotsLoading */,
+				B70EF1D8A6CBAF1D7E9C6C14A0528D52 /* FillableLoaders.modulemap */,
+				D698154FAAF3050601278C5DABFF62AE /* FillableLoaders.xcconfig */,
+				263456D8F755D5E6EE2DA14ED4CF256E /* FillableLoaders-dummy.m */,
+				A81D16E7A720566829DDC352D46AD30A /* FillableLoaders-prefix.pch */,
+				7D2C431A20F4CC5B2DD5D953AEEF2F5F /* FillableLoaders-umbrella.h */,
+				3487C1E1FEED24CA06B8FDA73F3E5BDC /* Info.plist */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/FillableLoaders";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		E50991116BAB9D7FA61BC29178CD2B96 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				647823CAABE9C3D308B9DFF03CA8444E /* FillableLoaders.framework */,
+				1A4A39F7F8A644C6C2F90ACD0CF030CC /* Pods_MadridShops.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8E7550CE4514F7323B93AC1D4A22EDA2 /* Headers */ = {
+		0AB028B04FC70B912DC7288DAF9F49CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A59EA6AFB21FF09ADA9C2F60C8C37C /* DotsLoading-umbrella.h in Headers */,
+				EC0C8368969C78C289C0AF4D09850D78 /* Pods-MadridShops-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E92083AE909E6263A13397E22A565AB8 /* Headers */ = {
+		16116F78849FBC74FB159895C6781B89 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B8D66B6E9A31768BE5195279CB1AC1 /* Pods-MadridShops-umbrella.h in Headers */,
+				8DE0A11CDA8AEF7B9971333CEE1F72DE /* FillableLoaders-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		84E451C15E5AA85C85B5D3C13046B84B /* DotsLoading */ = {
+		1283350107D027744392BDD2631815A8 /* Pods-MadridShops */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 468281A2646AA55311610A6EBD679B08 /* Build configuration list for PBXNativeTarget "DotsLoading" */;
+			buildConfigurationList = 8DD006B17F10C4B398CBA361767DEED4 /* Build configuration list for PBXNativeTarget "Pods-MadridShops" */;
 			buildPhases = (
-				BAD754AF82DC0A4EFDD47FAD74602C4D /* Sources */,
-				353D1958043B56ABE2536CF83D0491DF /* Frameworks */,
-				8E7550CE4514F7323B93AC1D4A22EDA2 /* Headers */,
+				F93BF6075672FAE92A1D32CEBF045434 /* Sources */,
+				02734B70EC31C7A6F5AE7A24D0F4B231 /* Frameworks */,
+				0AB028B04FC70B912DC7288DAF9F49CD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = DotsLoading;
-			productName = DotsLoading;
-			productReference = 5A93837346B0D693980C6F40CCB3D51E /* DotsLoading.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8F4A508D7A5A91A20E8661C612A5C143 /* Pods-MadridShops */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BCA0DE67672F42B12D8DA898E2AB3D14 /* Build configuration list for PBXNativeTarget "Pods-MadridShops" */;
-			buildPhases = (
-				25AC13EC4D7CA544A5C0D405C522DED1 /* Sources */,
-				40FAA1AF2DF008AB5DE59AF98D6DB902 /* Frameworks */,
-				E92083AE909E6263A13397E22A565AB8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E57B0C0A4BDE9561341B699EB16A98CA /* PBXTargetDependency */,
+				B9619001BE24CE1E79A78577E7FF7976 /* PBXTargetDependency */,
 			);
 			name = "Pods-MadridShops";
 			productName = "Pods-MadridShops";
-			productReference = 60E9E50FD0DD02FA7068A192D73E944D /* Pods_MadridShops.framework */;
+			productReference = 1A4A39F7F8A644C6C2F90ACD0CF030CC /* Pods_MadridShops.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		425632F84FDE13A29BBE47E186843971 /* FillableLoaders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7286C0BBE312777D0DFBA35554234EA /* Build configuration list for PBXNativeTarget "FillableLoaders" */;
+			buildPhases = (
+				E3BF7A493B428D4AD91A94C0AFC68F55 /* Sources */,
+				F76DEF36865B34C0AAB2D8A9552A6815 /* Frameworks */,
+				16116F78849FBC74FB159895C6781B89 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FillableLoaders;
+			productName = FillableLoaders;
+			productReference = 647823CAABE9C3D308B9DFF03CA8444E /* FillableLoaders.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -244,51 +254,53 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 353E38EAD80F6BD5CB285DA99A8E7BB3 /* Products */;
+			productRefGroup = E50991116BAB9D7FA61BC29178CD2B96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84E451C15E5AA85C85B5D3C13046B84B /* DotsLoading */,
-				8F4A508D7A5A91A20E8661C612A5C143 /* Pods-MadridShops */,
+				425632F84FDE13A29BBE47E186843971 /* FillableLoaders */,
+				1283350107D027744392BDD2631815A8 /* Pods-MadridShops */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		25AC13EC4D7CA544A5C0D405C522DED1 /* Sources */ = {
+		E3BF7A493B428D4AD91A94C0AFC68F55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E0EBE0A7BBE5B20A9666A1ACC49AFE8 /* Pods-MadridShops-dummy.m in Sources */,
+				771750728F40E7720F29F2ED68B6FDF0 /* FillableLoader.swift in Sources */,
+				A9A569FF0728D434D685EA759ABAD405 /* FillableLoaders-dummy.m in Sources */,
+				16AE630478EE5DABCAC9589F5329E5B8 /* PlainLoader.swift in Sources */,
+				A36E9D8533FD1C91437EDA2F3BEE9748 /* RoundedLoader.swift in Sources */,
+				4D7E6BB1E63461E678DB989D929A6753 /* SpikeLoader.swift in Sources */,
+				DBB819650172BA060C06BBA8AFD3C0C7 /* WavesLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAD754AF82DC0A4EFDD47FAD74602C4D /* Sources */ = {
+		F93BF6075672FAE92A1D32CEBF045434 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72B1583E95126A83EBC9B9B161E1D63D /* DotsLoading-dummy.m in Sources */,
-				469CB7C00D83F982FF86E27424A6395B /* DotsLoadingView.swift in Sources */,
-				F58FA77F55F235188E71FDADE09F9DEA /* DotView.swift in Sources */,
-				B5EA1220453957FCA599A25FE2CCF45B /* UIColor+hex.swift in Sources */,
+				016B8C54F9F69D9336A04A7C9550EF61 /* Pods-MadridShops-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E57B0C0A4BDE9561341B699EB16A98CA /* PBXTargetDependency */ = {
+		B9619001BE24CE1E79A78577E7FF7976 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DotsLoading;
-			target = 84E451C15E5AA85C85B5D3C13046B84B /* DotsLoading */;
-			targetProxy = FFCCDF1E642C250A7E98E39A48575EFE /* PBXContainerItemProxy */;
+			name = FillableLoaders;
+			target = 425632F84FDE13A29BBE47E186843971 /* FillableLoaders */;
+			targetProxy = 164F05537DE82F1580D6B8E7C35A5DEC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		011C91F0A666A6FACB471EC2D6665463 /* Debug */ = {
+		02C9FCE8360BFC14F43A1FCCC367CE09 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D708342DEC820806228485C7E580489 /* DotsLoading.xcconfig */;
+			baseConfigurationReference = D698154FAAF3050601278C5DABFF62AE /* FillableLoaders.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -302,14 +314,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DotsLoading/DotsLoading-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DotsLoading/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FillableLoaders/FillableLoaders-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FillableLoaders/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DotsLoading/DotsLoading.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FillableLoaders/FillableLoaders.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DotsLoading;
+				PRODUCT_NAME = FillableLoaders;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -321,42 +333,7 @@
 			};
 			name = Debug;
 		};
-		5524F1F078D5947D33241E9801E97C7B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D708342DEC820806228485C7E580489 /* DotsLoading.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DotsLoading/DotsLoading-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DotsLoading/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DotsLoading/DotsLoading.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DotsLoading;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		60F8AB8C6D88600C58B8EE69DCAA6379 /* Debug */ = {
+		61F1C00769463F2C2376EF07B68B7E53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 785630C0C33857ECDD54797971BE2109 /* Pods-MadridShops.debug.xcconfig */;
 			buildSettings = {
@@ -444,6 +421,41 @@
 			};
 			name = Debug;
 		};
+		B2F3C7574C8CE8499080C5FECE0DCF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D698154FAAF3050601278C5DABFF62AE /* FillableLoaders.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FillableLoaders/FillableLoaders-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FillableLoaders/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FillableLoaders/FillableLoaders.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FillableLoaders;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C03B8870130C98D1B02B59D003687524 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -488,7 +500,7 @@
 			};
 			name = Release;
 		};
-		C63F3773521DE4AE9ED459F341F5CBED /* Release */ = {
+		EB9E7003344CD2A30A8BADD94CBC0186 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A23218BCD39C138BF5C23FAB2FEB770 /* Pods-MadridShops.release.xcconfig */;
 			buildSettings = {
@@ -538,20 +550,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		468281A2646AA55311610A6EBD679B08 /* Build configuration list for PBXNativeTarget "DotsLoading" */ = {
+		8DD006B17F10C4B398CBA361767DEED4 /* Build configuration list for PBXNativeTarget "Pods-MadridShops" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				011C91F0A666A6FACB471EC2D6665463 /* Debug */,
-				5524F1F078D5947D33241E9801E97C7B /* Release */,
+				61F1C00769463F2C2376EF07B68B7E53 /* Debug */,
+				EB9E7003344CD2A30A8BADD94CBC0186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCA0DE67672F42B12D8DA898E2AB3D14 /* Build configuration list for PBXNativeTarget "Pods-MadridShops" */ = {
+		D7286C0BBE312777D0DFBA35554234EA /* Build configuration list for PBXNativeTarget "FillableLoaders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				60F8AB8C6D88600C58B8EE69DCAA6379 /* Debug */,
-				C63F3773521DE4AE9ED459F341F5CBED /* Release */,
+				02C9FCE8360BFC14F43A1FCCC367CE09 /* Debug */,
+				B2F3C7574C8CE8499080C5FECE0DCF04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

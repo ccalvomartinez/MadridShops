@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double DotsLoadingVersionNumber;
-FOUNDATION_EXPORT const unsigned char DotsLoadingVersionString[];
+FOUNDATION_EXPORT double FillableLoadersVersionNumber;
+FOUNDATION_EXPORT const unsigned char FillableLoadersVersionString[];
 

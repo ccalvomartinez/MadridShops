@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadAllShopsInteractorFakeImpl()
-        
+     //let downloadShopsInteractor: DownloadAllShopsInteractor = DownloadShopsInteractorNSOpImpl()
+      let downloadShopsInteractor = DownloadAlShopsInteractorNSUrlSession()
         downloadShopsInteractor.execute(onSuccess: { (shops: Shops) in
             self.shops = shops
             
@@ -25,7 +25,13 @@ class ViewController: UIViewController {
             self.shopsCollectionView.dataSource = self
         })
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowShopDetailSegway" {
+            let vc = segue.destination as! ShopDetailViewController
+            let indexPath = shopsCollectionView.indexPathsForSelectedItems![0]
+            vc.shop = self.shops?.get(index: indexPath.row)
+        }
+    }
    
 }
 
