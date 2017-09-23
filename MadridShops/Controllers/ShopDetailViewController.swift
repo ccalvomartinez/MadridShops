@@ -18,7 +18,8 @@ class ShopDetailViewController: UIViewController {
         super.viewDidLoad()
 
         self.title = self.shop?.name
-        // Do any additional setup after loading the view.
+        self.shopDetailDescription.text = shop?.description_en
+        self.shop?.image.loadImage(into: shopImageView)
     }
 
     override func didReceiveMemoryWarning() {

@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="foW-hI-By6">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foW-hI-By6">
                                 <rect key="frame" x="16" y="64" width="343" height="301.5"/>
                             </mapView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aMb-jf-V9w">
@@ -67,7 +67,6 @@
                                         <connections>
                                             <outlet property="imageView" destination="c7W-Lo-jwg" id="TxK-9k-jTJ"/>
                                             <outlet property="nombreLabel" destination="h8M-O6-EDd" id="XTx-GB-1S3"/>
-                                            <segue destination="9oT-qQ-02r" kind="show" identifier="ShowShopDetailSegway" id="TKb-Cf-UJh"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -89,6 +88,7 @@
                     <navigationItem key="navigationItem" title="Shops" id="7Bo-a5-ns5"/>
                     <connections>
                         <outlet property="shopsCollectionView" destination="aMb-jf-V9w" id="K1o-xg-Nhe"/>
+                        <segue destination="9oT-qQ-02r" kind="show" identifier="ShowShopDetailManual" id="5hj-yi-osp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -157,7 +157,7 @@
                     <navigationItem key="navigationItem" title="!MAD!" id="mTu-cL-r5k">
                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="mBI-v9-1hE">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="GFe-CX-Cc7"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="ShowShopsSegue" id="GFe-CX-Cc7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

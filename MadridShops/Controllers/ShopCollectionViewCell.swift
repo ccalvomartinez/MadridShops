@@ -18,5 +18,6 @@ class ShopCollectionViewCell: UICollectionViewCell {
     func refresh(shop: Shop) {
         self.shop = shop
         self.nombreLabel.text = shop.name
+        self.shop?.logo_url.loadImageNSUrlSession(into: self.imageView)
     }
 }

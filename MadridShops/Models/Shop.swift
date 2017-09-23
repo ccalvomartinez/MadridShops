@@ -10,12 +10,16 @@ import Foundation
 
 public class Shop{
     let name: String
-    var description: String = ""
+    var description_en: String = ""
+    var description_es: String = ""
     var latitude: Float? = nil
     var longitude: Float? = nil
-    var image: String = ""
-    var logo: String = ""
-    var openingHours: String = ""
+    var image_url: String = ""
+    var image: Data? = nil
+    var logo_url: String = ""
+    var logo: Data? = nil
+    var openingHours_en: String = ""
+    var openingHours_es: String = ""
     var address: String = ""
 
     public init(name: String) {
