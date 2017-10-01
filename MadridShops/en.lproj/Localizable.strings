@@ -1,0 +1,10 @@
+/* 
+  LocalizeStrings.strings
+  MadridShops
+
+  Created by Administrador on 27/9/17.
+  Copyright © 2017 CCM. All rights reserved.
+*/
+"Error while downloading data. " = "Error while downloading data. ";
+"Shops" = "Shops";
+"Activities" = "Activities";

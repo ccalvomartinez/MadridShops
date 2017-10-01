@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FillableLoaders
 import CoreData
 
 class MainViewController: UIViewController {
@@ -18,7 +17,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var goToActivitiesButton: UIButton!
     
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var   activityIndicatorView: UIActivityIndicatorView!
     var context: NSManagedObjectContext!
     
     @IBOutlet weak var messageView: UILabel!

@@ -40,7 +40,7 @@
 		83DA96581F65A2C400F64C65 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA96571F65A2C400F64C65 /* Place.swift */; };
 		83DA965A1F65A4C600F64C65 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA96591F65A4C600F64C65 /* Places.swift */; };
 		83DA965D1F65AA9E00F64C65 /* ShopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA965C1F65AA9E00F64C65 /* ShopsTests.swift */; };
-		83DB2DC91F7C0DAB00C86383 /* LocalizeStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83DB2DCB1F7C0DAB00C86383 /* LocalizeStrings.strings */; };
+		83DB2DC91F7C0DAB00C86383 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83DB2DCB1F7C0DAB00C86383 /* Localizable.strings */; };
 		83DB2DCE1F7FB6CA00C86383 /* ImageFromLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DB2DCD1F7FB6CA00C86383 /* ImageFromLocation.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8305A4951F816B7000AFA9CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8310AECB1F6868A7006B3480 /* DownloadAlPlacesInteractorNSUrlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAlPlacesInteractorNSUrlSession.swift; sourceTree = "<group>"; };
 		8310AECD1F6872B4006B3480 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
 		831CFC1A1F6ED9B300B4A1C1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -97,7 +98,7 @@
 		83DA965C1F65AA9E00F64C65 /* ShopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsTests.swift; sourceTree = "<group>"; };
 		83DB2DC51F7C0C6D00C86383 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		83DB2DC61F7C0C6D00C86383 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		83DB2DCC1F7C0DB300C86383 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LocalizeStrings.strings; sourceTree = "<group>"; };
+		83DB2DCC1F7C0DB300C86383 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		83DB2DCD1F7FB6CA00C86383 /* ImageFromLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,7 +160,7 @@
 				83DA96551F65A09D00F64C65 /* Views */,
 				83DA96541F65A08E00F64C65 /* Controllers */,
 				831F764A1F659E4500DA0656 /* Info.plist */,
-				83DB2DCB1F7C0DAB00C86383 /* LocalizeStrings.strings */,
+				83DB2DCB1F7C0DAB00C86383 /* Localizable.strings */,
 			);
 			path = MadridShops;
 			sourceTree = "<group>";
@@ -379,7 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83DB2DC91F7C0DAB00C86383 /* LocalizeStrings.strings in Resources */,
+				83DB2DC91F7C0DAB00C86383 /* Localizable.strings in Resources */,
 				831F76491F659E4400DA0656 /* LaunchScreen.storyboard in Resources */,
 				831F76461F659E4400DA0656 /* Assets.xcassets in Resources */,
 				831F76441F659E4400DA0656 /* Main.storyboard in Resources */,
@@ -468,12 +469,13 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		83DB2DCB1F7C0DAB00C86383 /* LocalizeStrings.strings */ = {
+		83DB2DCB1F7C0DAB00C86383 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83DB2DCC1F7C0DB300C86383 /* es */,
+				8305A4951F816B7000AFA9CD /* Base */,
 			);
-			name = LocalizeStrings.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
