@@ -8,10 +8,10 @@
 
 import Foundation
 
-class DownloadAlShopsInteractorNSUrlSession: DownloadAllShopsInteractor {
-    func execute(onSuccess: @escaping (Shops) -> Void, onError: errorClosure) {
+class DownloadAlPlacesInteractorNSUrlSession: DownloadAllPlacesInteractor {
+    func execute(onSuccess: @escaping (Places) -> Void, onError: errorClosure) {
         // TODO: Guardar la URL en app settings
-        let urlString = "https://madrid-shops.com/json_new/getShops.php"
+        let urlString = "https://madrid-places.com/json_new/getShops.php"
         
         let session = URLSession.shared
         if let url = URL(string: urlString){
@@ -21,9 +21,9 @@ class DownloadAlShopsInteractorNSUrlSession: DownloadAllShopsInteractor {
                      assert(Thread.current == Thread.main)
                     if error == nil {
                         // OK
-                        let shops = parseShops(data: data!)
+                        let places = parseShops(data: data!)
                         
-                        onSuccess(shops)
+                        onSuccess(places)
                     } else {
                         if let onErrorLocal = onError {
                             onErrorLocal(error!)
@@ -35,7 +35,7 @@ class DownloadAlShopsInteractorNSUrlSession: DownloadAllShopsInteractor {
         }
    }
     
-    func execute(onSuccess: @escaping (Shops) -> Void) {
+    func execute(onSuccess: @escaping (Places) -> Void) {
         execute(onSuccess: onSuccess, onError: nil)
     }
     

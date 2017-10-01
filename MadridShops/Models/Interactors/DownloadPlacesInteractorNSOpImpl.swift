@@ -1,5 +1,5 @@
 //
-//  DownloadShopsInteractorNSOpImpl.swift
+//  DownloadPlacesInteractorNSOpImpl.swift
 //  MadridShops
 //
 //  Created by Administrador on 11/9/17.
@@ -7,23 +7,23 @@
 //
 
 import Foundation
-class DownloadShopsInteractorNSOpImpl: DownloadAllShopsInteractor {
-    func execute(onSuccess: @escaping (Shops) -> Void) {
+class DownloadPlacesInteractorNSOpImpl: DownloadAllPlacesInteractor {
+    func execute(onSuccess: @escaping (Places) -> Void) {
         execute(onSuccess: onSuccess, onError: nil)
     }
     
-    func execute(onSuccess: @escaping (Shops) -> Void, onError: errorClosure = nil) {
-        let urlString = "https://madrid-shops.com/json_new/getShops.php"
+    func execute(onSuccess: @escaping (Places) -> Void, onError: errorClosure = nil) {
+        let urlString = "https://madrid-places.com/json_new/getShops.php"
         
         let queue = OperationQueue()
         queue.addOperation {
             
             if let url = URL(string: urlString), let data = NSData(contentsOf: url) as Data? {
 
-                let shops = parseShops(data: data)
+                let places = parseShops(data: data)
                 
                 OperationQueue.main.addOperation {
-                    onSuccess(shops)
+                    onSuccess(places)
                 }
 
             }

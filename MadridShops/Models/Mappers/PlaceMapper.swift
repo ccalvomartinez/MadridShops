@@ -8,8 +8,8 @@
 
 import CoreData
 
-func mapShopCDIntoShop(shopCD: ShopCD) -> Shop {
-    let shop = Shop(name: shopCD.name!)
+func mapShopCDIntoShop(shopCD: ShopCD) -> Place {
+    let shop = Place(name: shopCD.name!)
     shop.address = shopCD.address ?? ""
     shop.description_en = shopCD.description_en ?? ""
     shop.description_es = shopCD.description_es ?? ""
@@ -25,7 +25,7 @@ func mapShopCDIntoShop(shopCD: ShopCD) -> Shop {
     return shop
 }
 
-func mapShopIntoShopCD(context: NSManagedObjectContext, shop: Shop) -> ShopCD {
+func mapShopIntoShopCD(context: NSManagedObjectContext, shop: Place) -> ShopCD {
     let shopCD = ShopCD(context: context)
     shopCD.name = shop.name
     shopCD.address = shop.address

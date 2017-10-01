@@ -75,7 +75,7 @@ public class ShopsCD: ShopsProocol {
         
         // Set the batch size to a suitable number.
         fetchRequest.fetchBatchSize = 20
-        
+       
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
         
         // Edit the section name key path and cache name if appropriate.

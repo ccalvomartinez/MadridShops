@@ -1,5 +1,5 @@
 //
-//  ShopDetailViewController.swift
+//  PlaceDetailViewController.swift
 //  MadridShops
 //
 //  Created by Administrador on 12/9/17.
@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ShopDetailViewController: UIViewController {
+class PlaceDetailViewController: UIViewController {
 
-    var shop: Shop?
-    @IBOutlet weak var shopDetailDescription: UITextView!
-    @IBOutlet weak var shopImageView: UIImageView!
+    var place: Place?
+    @IBOutlet weak var placeDetailDescription: UITextView!
+    @IBOutlet weak var placeImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = self.shop?.name
-        self.shopDetailDescription.text = shop?.description_en
-        self.shop?.image.loadImage(into: shopImageView)
+        self.title = self.place?.name
+        self.placeDetailDescription.text = place?.description_en
+        if let data = self.place?.image {
+            self.placeImageView.image = UIImage(data: data)
+        }
     }
 
     override func didReceiveMemoryWarning() {
