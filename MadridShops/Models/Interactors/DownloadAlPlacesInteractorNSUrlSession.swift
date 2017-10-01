@@ -9,9 +9,20 @@
 import Foundation
 
 class DownloadAlPlacesInteractorNSUrlSession: DownloadAllPlacesInteractor {
+    
+    private let _downloadShops: Bool
+    
+    init(loadShops: Bool) {
+        self._downloadShops = loadShops
+    }
     func execute(onSuccess: @escaping (Places) -> Void, onError: errorClosure) {
-        // TODO: Guardar la URL en app settings
-        let urlString = "https://madrid-places.com/json_new/getShops.php"
+        
+        var urlString = ""
+        if self._downloadShops {
+            urlString = Bundle.main.infoDictionary!["shopsUrl"] as! String
+        } else {
+             urlString = Bundle.main.infoDictionary!["activitiesUrl"] as! String
+        }
         
         let session = URLSession.shared
         if let url = URL(string: urlString){
@@ -21,17 +32,19 @@ class DownloadAlPlacesInteractorNSUrlSession: DownloadAllPlacesInteractor {
                      assert(Thread.current == Thread.main)
                     if error == nil {
                         // OK
-                        let places = parseShops(data: data!)
+                        let places = parsePlaces(data: data!)
                         
                         onSuccess(places)
                     } else {
                         if let onErrorLocal = onError {
+                            print( "Error downloading data from url: \(urlString) . Error: \(error!.localizedDescription)")
                             onErrorLocal(error!)
                         }
                     }
                 }
             }
             task.resume()
+            
         }
    }
     

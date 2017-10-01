@@ -20,7 +20,7 @@ class DownloadPlacesInteractorNSOpImpl: DownloadAllPlacesInteractor {
             
             if let url = URL(string: urlString), let data = NSData(contentsOf: url) as Data? {
 
-                let places = parseShops(data: data)
+                let places = parsePlaces(data: data)
                 
                 OperationQueue.main.addOperation {
                     onSuccess(places)

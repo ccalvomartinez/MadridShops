@@ -5,3 +5,6 @@
   Created by Administrador on 27/9/17.
   Copyright © 2017 CCM. All rights reserved.
 */
+"Error while downloading data. " = "Error obtener los datos: ";
+"Shops" = "Tiendas";
+"Activities" = "Actividades";

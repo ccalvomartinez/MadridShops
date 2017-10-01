@@ -22,13 +22,13 @@ class ShopsTests: XCTestCase {
     }
     
     func testGivenEmptyShops_NumberShopsIsZero() {
-        let shops = Shops()
-        XCTAssertEqual(0, shops.count())
+        let places = Places()
+        XCTAssertEqual(0, places.count())
     }
     
     func testShopsWithOneElement_NumberShopsIsOne() {
-        let shops = Shops()
-        shops.add(shop: Shop(name: "Corte Inglés"))
-        XCTAssertEqual(1, shops.count())
+        let places = Places()
+        places.add(place: Place(name: "Corte Inglés"))
+        XCTAssertEqual(1, places.count())
     }
 }

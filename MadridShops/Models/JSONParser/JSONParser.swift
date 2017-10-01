@@ -8,26 +8,33 @@
 
 import Foundation
 
-func parseShops(data: Data) -> Shops {
-    let shops = Shops()
+func parsePlaces(data: Data) -> Places {
+    let places = Places()
     do {
         let jsonObject = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! Dictionary<String, Any>
         let result = jsonObject["result"] as! [Dictionary<String, Any>]
        
-        for shopJson in result {
-            let shop = Shop(name: shopJson["name"]! as! String)
-            shop.address = shopJson["address"]! as! String
-            shop.logo_url = shopJson["logo_img"] as! String
-            shop.description_en = shopJson["description_en"] as! String
-            shop.description_es = shopJson["description_es"] as! String
-            shop.image_url = shopJson["img"] as! String
-            shop.latitude = shopJson["gps_lat"] as? Float
-            shop.longitude = shopJson["gps_lon"] as? Float
-            shop.openingHours_en = shopJson["opening_hours_en"] as! String
-            shop.openingHours_es = shopJson["opening_hours_es"] as! String
+        for placeJson in result {
+            let place = Place(name: placeJson["name"]! as! String)
+            place.address = placeJson["address"]! as! String
+            place.logo_url = placeJson["logo_img"] as! String
+            place.description_en = placeJson["description_en"] as! String
+            place.description_es = placeJson["description_es"] as! String
+            place.image_url = placeJson["img"] as! String
+            place.latitude = parseDouble(valueFromJSON: placeJson["gps_lat"])
+            place.longitude = parseDouble(valueFromJSON: placeJson["gps_lon"])
+            place.openingHours_en = placeJson["opening_hours_en"] as! String
+            place.openingHours_es = placeJson["opening_hours_es"] as! String
             
-            shops.add(shop: shop)
+            places.add(place: place)
         }
     } catch {}
-    return shops
+    return places
+}
+
+func parseDouble(valueFromJSON: Any?) -> Double? {
+    guard let value = valueFromJSON else {return nil}
+    let valueToString = value as! String
+    let valueTrimmed = valueToString.trimmingCharacters(in: .whitespacesAndNewlines)
+    return Double(valueTrimmed)
 }

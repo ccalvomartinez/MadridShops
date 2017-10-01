@@ -1,5 +1,5 @@
 //
-//  Shops.swift
+//  Places.swift
 //  MadridShops
 //
 //  Created by Administrador on 10/9/17.
@@ -8,41 +8,43 @@
 
 import Foundation
 
-public protocol ShopsProocol {
+public protocol PlacesProocol {
     func count() -> Int
-    func add(shop: Shop) -> Void
-    func get(index: Int) -> Shop?
+    func add(place: Place) -> Void
+    func get(index: Int) -> Place?
 }
-public class Shops: ShopsProocol {
+public class Places: PlacesProocol {
     
-    private var _shopsList: [Shop]?
+    private var _placesList: [Place]?
     
     public init(){
-        self._shopsList = []
+        self._placesList = []
     }
     public func count() -> Int {
-        return _shopsList?.count ?? 0
+        return _placesList?.count ?? 0
     }
     
-    public func add(shop: Shop) {
-        _shopsList?.append(shop)
+    public func add(place: Place) {
+        _placesList?.append(place)
     }
     
-    public func get(index: Int) -> Shop? {
-        return (_shopsList?[index])!
+    public func get(index: Int) -> Place? {
+        return (_placesList?[index])!
     }
     
    
 }
 
 import CoreData
-public class ShopsCD: ShopsProocol {
+public class PlacesCD: PlacesProocol {
     
     private var _context: NSManagedObjectContext
-    private var _fetchedResultsController: NSFetchedResultsController<ShopCD>? = nil
+    private var _fetchedResultsController: NSFetchedResultsController<PlaceCD>? = nil
+    private var _areShops: Bool
     
-    public init(_ context: NSManagedObjectContext){
+    public init(_ context: NSManagedObjectContext, areShops: Bool){
         self._context = context
+        self._areShops = areShops
     }
     
     public func count() -> Int {
@@ -50,15 +52,15 @@ public class ShopsCD: ShopsProocol {
         return sectionInfo.numberOfObjects
     }
     
-    public func add(shop: Shop) {
-        let _ = mapShopIntoShopCD(context: self._context, shop: shop)
+    public func add(place: Place) {
+        let _ = mapPlaceIntoPlaceCD(context: self._context, place: place, isShop: _areShops)
         _context.saveContext(onError: nil)
     }
     
-    public func get(index: Int) -> Shop? {
+    public func get(index: Int) -> Place? {
         
-        if let  shopCD = self._fetchedResultsController?.object(at: IndexPath(row: index, section: 0)) {
-            return mapShopCDIntoShop(shopCD: shopCD)
+        if let  placeCD = self._fetchedResultsController?.object(at: IndexPath(row: index, section: 0)) {
+            return mapPlaceCDIntoPlace(placeCD: placeCD)
         } else {
             return nil
         }
@@ -66,13 +68,15 @@ public class ShopsCD: ShopsProocol {
         
     }
     
-    var fetchedResultsController: NSFetchedResultsController<ShopCD> {
+    var fetchedResultsController: NSFetchedResultsController<PlaceCD> {
         if (_fetchedResultsController != nil) {
             return _fetchedResultsController!
         }
         
-        let fetchRequest: NSFetchRequest<ShopCD> = ShopCD.fetchRequest()
+        let fetchRequest: NSFetchRequest<PlaceCD> = PlaceCD.fetchRequest()
         
+        fetchRequest.predicate = NSPredicate(format: "isShop = %@", NSNumber(booleanLiteral: self._areShops))
+    
         // Set the batch size to a suitable number.
         fetchRequest.fetchBatchSize = 20
        
@@ -81,7 +85,7 @@ public class ShopsCD: ShopsProocol {
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
         // fetchRequest == SELECT * FROM EVENT ORDER BY TIMESTAMP DESC
-        _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self._context, sectionNameKeyPath: nil, cacheName: "ShopCache")
+        _fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self._context, sectionNameKeyPath: nil, cacheName: "PlaceCache")
         //aFetchedResultsController.delegate = self
         
         do {

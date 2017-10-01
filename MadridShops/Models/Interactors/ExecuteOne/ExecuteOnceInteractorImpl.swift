@@ -9,14 +9,15 @@
 import Foundation
 
 class ExecuteOnceInteractorImpl: ExecuteOnceInteractor {
-    func execute(closure: () -> Void) {
+    func execute(executeOnce: () -> Void, executeElse: (() -> Void)?) {
         let defaults = UserDefaults.standard
         if let _ = defaults.string(forKey: "once") {
-            
+            if let executeElseClosure = executeElse {
+                executeElseClosure()
+            }
         } else {
-            closure()
+            executeOnce()
             
         }
-        
     }
 }

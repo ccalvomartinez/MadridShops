@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>mapUrl</key>
+	<string>https://maps.googleapis.com/maps/api/staticmap?center=%f,%f&amp;zoom=17&amp;size=320x220&amp;scale=2&amp;markers=%f,%f</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Show your location in the map</string>
+	<key>activitiesUrl</key>
+	<string>https://madrid-shops.com/json_new/getActivities.php</string>
+	<key>shopsUrl</key>
+	<string>https://madrid-shops.com/json_new/getShops.php</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

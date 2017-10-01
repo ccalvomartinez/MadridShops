@@ -1,5 +1,5 @@
 //
-//  ShopMapper.swift
+//  PlaceMapper.swift
 //  MadridShops
 //
 //  Created by Administrador on 18/9/17.
@@ -8,37 +8,40 @@
 
 import CoreData
 
-func mapShopCDIntoShop(shopCD: ShopCD) -> Place {
-    let shop = Place(name: shopCD.name!)
-    shop.address = shopCD.address ?? ""
-    shop.description_en = shopCD.description_en ?? ""
-    shop.description_es = shopCD.description_es ?? ""
-    shop.image = shopCD.image
-    shop.image_url = shopCD.image_url ?? ""
-    shop.latitude = shopCD.latitude
-    shop.longitude = shopCD.longitude
-    shop.logo = shopCD.logo
-    shop.logo_url = shopCD.logo_url ?? ""
-    shop.openingHours_en = shopCD.openingHours_en ?? ""
-    shop.openingHours_es = shopCD.openingHours_es ?? ""
+func mapPlaceCDIntoPlace(placeCD: PlaceCD) -> Place {
+    let place = Place(name: placeCD.name!)
+    place.address = placeCD.address ?? ""
+    place.description_en = placeCD.description_en ?? ""
+    place.description_es = placeCD.description_es ?? ""
+    place.image = placeCD.image
+    place.image_url = placeCD.image_url ?? ""
+    place.latitude = placeCD.latitude
+    place.longitude = placeCD.longitude
+    place.logo = placeCD.logo
+    place.logo_url = placeCD.logo_url ?? ""
+    place.openingHours_en = placeCD.openingHours_en ?? ""
+    place.openingHours_es = placeCD.openingHours_es ?? ""
+    place.map = placeCD.map
     
-    return shop
+    return place
 }
 
-func mapShopIntoShopCD(context: NSManagedObjectContext, shop: Place) -> ShopCD {
-    let shopCD = ShopCD(context: context)
-    shopCD.name = shop.name
-    shopCD.address = shop.address
-    shopCD.description_en = shop.description_en
-    shopCD.description_es = shop.description_es
-    shopCD.image = shop.image
-    shopCD.image_url = shop.image_url
-    shopCD.latitude = shop.latitude ?? 0
-    shopCD.longitude = shop.longitude ?? 0
-    shopCD.logo = shop.logo
-    shopCD.logo_url = shop.logo_url
-    shopCD.openingHours_en = shop.openingHours_en
-    shopCD.openingHours_es = shop.description_es
+func mapPlaceIntoPlaceCD(context: NSManagedObjectContext, place: Place, isShop: Bool) -> PlaceCD {
+    let placeCD = PlaceCD(context: context)
+    placeCD.name = place.name
+    placeCD.address = place.address
+    placeCD.description_en = place.description_en
+    placeCD.description_es = place.description_es
+    placeCD.image = place.image
+    placeCD.image_url = place.image_url
+    placeCD.latitude = place.latitude ?? 0
+    placeCD.longitude = place.longitude ?? 0
+    placeCD.logo = place.logo
+    placeCD.logo_url = place.logo_url
+    placeCD.openingHours_en = place.openingHours_en
+    placeCD.openingHours_es = place.description_es
+    placeCD.isShop = isShop
+    placeCD.map = place.map
     
-    return shopCD
+    return placeCD
 }

@@ -14,7 +14,7 @@ extension PlacesViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: PlaceCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShopCell", for: indexPath) as! PlaceCollectionViewCell
+        let cell: PlaceCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlaceCell", for: indexPath) as! PlaceCollectionViewCell
         
         cell.refresh(place: (self.places?.get(index: indexPath.row))!)
         return cell

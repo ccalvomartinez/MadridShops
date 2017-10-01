@@ -13,13 +13,20 @@ class PlaceDetailViewController: UIViewController {
     var place: Place?
     @IBOutlet weak var placeDetailDescription: UITextView!
     @IBOutlet weak var placeImageView: UIImageView!
+    @IBOutlet weak var openingHours: UILabel!
+    @IBOutlet weak var address: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = self.place?.name
-        self.placeDetailDescription.text = place?.description_en
-        if let data = self.place?.image {
+        self.placeDetailDescription.text = place?.loalizedDescription
+        self.openingHours.text = place?.localizedOpeningHours
+        self.address.text = place?.address
+        
+        if let data = self.place?.map {
+            self.placeImageView.image = UIImage(data: data)
+        } else if let data = self.place?.image {
             self.placeImageView.image = UIImage(data: data)
         }
     }

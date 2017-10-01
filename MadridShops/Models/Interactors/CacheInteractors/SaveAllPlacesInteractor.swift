@@ -1,5 +1,5 @@
 //
-//  SaveAllShopsInteractor.swift
+//  SaveAllPlacesInteractor.swift
 //  MadridShops
 //
 //  Created by Administrador on 17/9/17.
@@ -8,8 +8,8 @@
 
 import CoreData
 
-protocol SaveAllShopsInteractor {
-    // execute: saves all shops. Return on the main thread
-    func execute(shops: Places, context: NSManagedObjectContext, onSuccess: @escaping (Places) -> Void, onError: errorClosure)
-    func execute(shops: Places, context: NSManagedObjectContext, onSuccess: @escaping (Places) -> Void)
+protocol SaveAllPlacesInteractor {
+    // execute: saves all places. Return on the main thread
+    func execute(places: PlacesProocol, areShops: Bool,  context: NSManagedObjectContext, onSuccess: @escaping (PlacesProocol) -> Void, onError: errorClosure)
+    func execute(places: PlacesProocol, areShops: Bool, context: NSManagedObjectContext, onSuccess: @escaping (PlacesProocol) -> Void)
 }
